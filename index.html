@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="calculator">
+      <div id="display">0</div>
+      <button class="numButton">1</button>
+      <button class="numButton">2</button>
+      <button class="numButton">3</button>
+      <button class="opButton">+</button>
+      <button class="numButton">4</button>
+      <button class="numButton">5</button>
+      <button class="numButton">6</button>
+      <button class="opButton">-</button>
+      <button class="numButton">7</button>
+      <button class="numButton">8</button>
+      <button class="numButton">9</button>
+      <button class="opButton">*</button>
+      <button class="numButton">0</button>
+      <button class="opButton">/</button>
+      <button class="eqButton">=</button>
+      <button class="clearButton">C</button>
+    </div>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      #calculator {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 8px;
+        max-width: 300px;
+        margin: auto;
+      }
+
+      #display {
+        grid-column: span 4;
+        background-color: #f0f0f0;
+        padding: 10px;
+        text-align: right;
+        font-size: 1.5em;
+      }
+
+      .numButton,
+      .opButton,
+      .eqButton,
+      .clearButton {
+        grid-column: span 1;
+        padding: 10px;
+        font-size: 1.2em;
+      }
+
+      .numButton,
+      .opButton,
+      .clearButton {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      .eqButton {
+        background-color: #ff9800;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      .clearButton {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+    <script src="script.js"></script>
+  </body>
+</html>
